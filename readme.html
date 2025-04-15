@@ -1,115 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>📊 Crime Data Analysis Report</title>
-</head>
-<body>
+Overall Trend Analysis of the Crime Dataset
+1. Time-Based Crime Trends
+Most crimes occur during late evening hours (7 PM – 11 PM).
 
-    <h1>📊 Crime Data Analysis Report</h1>
+A steady rise in incidents begins from afternoon (3 PM onwards), peaking in the evening, then tapering off post-midnight.
 
-    <h2>📌 Overview</h2>
-    <p>
-        This report presents an in-depth analysis of crime data to identify trends, patterns, and insights.
-        The dataset contains records of reported crimes, including crime types, locations, victim demographics,
-        case statuses, and time of occurrence. The goal is to understand crime distribution across different areas,
-        assess law enforcement efficiency, and suggest preventive measures.
-    </p>
+Crimes happen less frequently in the early morning hours (1 AM – 5 AM).
 
-    <h2>📂 Dataset Description</h2>
-    <ul>
-        <li>📅 <strong>Reported Date:</strong> Date when the crime was officially reported.</li>
-        <li>📍 <strong>Area Code & Area Name:</strong> Geographic region where the crime occurred.</li>
-        <li>⚖️ <strong>Crime Seriousness & Crime Code:</strong> Classification of crime severity.</li>
-        <li>📝 <strong>Crime Description:</strong> Detailed classification of the offense.</li>
-        <li>🧑‍🤝‍🧑 <strong>Victim Age & Victim Sex:</strong> Demographic information of the victims.</li>
-        <li>🏠 <strong>Premises Description:</strong> Location where the crime took place (e.g., street, residence, store).</li>
-        <li>🔫 <strong>Weapon Used:</strong> Type of weapon or force used in the crime.</li>
-        <li>📌 <strong>Case Status:</strong> Progress of the case (e.g., under investigation, solved, suspect arrested).</li>
-        <li>🗺️ <strong>Incident Location & Cross Street:</strong> Specific address where the crime occurred.</li>
-        <li>🌐 <strong>Latitude & Longitude:</strong> Coordinates for mapping crimes.</li>
-        <li>⏰ <strong>Datetime of Occurrence:</strong> Exact time when the crime happened.</li>
-    </ul>
+2. Location & Area Patterns
+The heatmap revealed that certain areas like Wilshire, Central, and Van Nuys have consistently higher numbers of serious crimes (level 1).
 
-    <h2>🎯 Objectives of the Analysis</h2>
-    <ul>
-        <li>📈 Identify crime trends over time.</li>
-        <li>🗺️ Understand geographical distribution of crime.</li>
-        <li>⚠️ Analyze crime severity levels.</li>
-        <li>👥 Study victim demographics by age and gender.</li>
-        <li>🔪 Analyze weapon usage in crimes.</li>
-        <li>👮 Evaluate law enforcement resolution efficiency.</li>
-    </ul>
+Crime seriousness levels vary geographically, indicating that some areas are more prone to minor vs. major offenses.
 
-    <h2>🔍 Key Findings & Insights</h2>
+3. Victim Demographics
+From the Victim Gender Distribution, males are more frequently victims than females overall.
 
-    <h3>📊 Crime Frequency and Trends</h3>
-    <ul>
-        <li>🚗 Common crimes: vehicle theft, burglary, grand theft.</li>
-        <li>🌙 Crimes peak on weekends and late nights.</li>
-        <li>📅 Yearly crime trends show fluctuation.</li>
-    </ul>
+The boxplot indicated that certain crimes (like shoplifting or burglary) tend to affect younger adults, while others like fraud or grand theft auto might span a broader age range.
 
-    <h3>📍 Geographical Crime Hotspots</h3>
-    <ul>
-        <li>🔥 Hotspots: Central, Wilshire, and Southwest regions.</li>
-        <li>🏙️ Urban centers report more crimes than suburbs.</li>
-        <li>📌 Crime clusters seen in business districts.</li>
-    </ul>
+The scatter plot of Victim Age vs. Time showed:
 
-    <h3>🧑‍🤝‍🧑 Victim Demographics</h3>
-    <ul>
-        <li>👨 Majority victims: young adult males.</li>
-        <li>🧒 Crimes against minors are rare but severe.</li>
-        <li>👩 Domestic violence affects more females.</li>
-    </ul>
+Teenagers and young adults (15–25) are often targeted during afternoons and evenings.
 
-    <h3>⚠️ Crime Severity & Weapon Usage</h3>
-    <ul>
-        <li>💪 Common method: strong-arm (bodily force).</li>
-        <li>🔫 Firearms and knives in violent crimes.</li>
-        <li>📌 Patterns in areas for serious crimes.</li>
-    </ul>
+Older victims (60+) appear in fewer cases and tend to be affected earlier in the day.
 
-    <h3>👮 Law Enforcement Efficiency</h3>
-    <ul>
-        <li>🕵️ Many cases still under investigation.</li>
-        <li>🚨 Violent crimes resolved more often.</li>
-        <li>🏚️ Property crimes have lower closure rates.</li>
-    </ul>
+4. Crime Types
+Most reported crimes revolve around vehicle-related theft (stolen or burglary) and property crimes.
 
-    <h2>✅ Conclusion & Recommendations</h2>
-    <ul>
-        <li>🚓 Increase patrols in high-crime areas.</li>
-        <li>📣 Run community awareness programs.</li>
-        <li>🔍 Use predictive analytics for prevention.</li>
-        <li>⚙️ Improve investigation efficiency.</li>
-        <li>🛡️ Strengthen weapon control laws.</li>
-    </ul>
+Crime descriptions such as ‘VEHICLE - STOLEN’, ‘BURGLARY FROM VEHICLE’, and ‘SHOPLIFTING’ are the top three.
 
-    <h2>🔗 Dataset Link</h2>
-    <p>
-        📁 <a href="https://www.kaggle.com/datasets" target="_blank">Click here to access the crime dataset</a>
-    </p>
+These crimes suggest a trend of property-centric urban offenses.
 
-    <h2>🧰 Tools & Technologies Used</h2>
-    <ul>
-        <li>🐍 Python</li>
-        <li>🔢 NumPy</li>
-        <li>📊 Pandas</li>
-        <li>📉 Matplotlib</li>
-        <li>🎨 Seaborn</li>
-    </ul>
+5. Geographic Distribution & Relationships
+Pairplots and scatter plots show slight clustering based on location coordinates (latitude and longitude), indicating some crimes are concentrated in specific city blocks.
 
-    <h2>📈 Types of Graphs Used</h2>
-    <ul>
-        <li>📊 Bar Graph</li>
-        <li>🥧 Pie Chart</li>
-        <li>📈 Line Graph</li>
-        <li>🔵 Scatter Plot</li>
-        <li>📦 Box Plot (IQR)</li>
-        <li>🗺️ Geospatial Heatmaps</li>
-    </ul>
+Victim age doesn't significantly correlate with location, but clusters suggest urban core areas are more active in terms of crime.
 
-</body>
-</html>
+
