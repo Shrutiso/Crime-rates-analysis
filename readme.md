@@ -28,6 +28,25 @@ The dataset includes:
 
 ---
 
+## 📌 Summary of Key Insights
+
+1. **Crime Peaked in 2022 and Then Declined**  
+   Total crimes rose sharply until 2022, followed by a noticeable decline from 2023 to 2025, suggesting effective interventions or policies.
+
+2. **Vehicle-Related Crimes Are Most Prevalent**  
+   Vehicle theft and burglary from vehicles are the most reported crimes, indicating a major concern around personal property and transportation security.
+
+3. **Central Area Is the Crime Epicenter**  
+   The Central district has the highest number and seriousness of crimes, with other urban areas like 77th Street and Pacific also showing high crime rates.
+
+4. **Young Adults and Males Are Most Affected**  
+   Victim demographics show a left-skewed age distribution with more young victims, and males account for the majority of crime reports.
+
+5. **Evening Hours See the Highest Crime Rates**  
+   Most crimes occur between 5 PM and 7 PM, while early morning hours see the least, highlighting key windows for law enforcement focus.
+
+---
+
 ## 🧠 Objectives
 
 - Identify **crime hotspots** using latitude/longitude
@@ -136,4 +155,3 @@ Special thanks to:
 - All peers and mentors who encouraged and reviewed this project.
 
 ---
-
